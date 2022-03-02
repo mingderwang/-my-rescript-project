@@ -8,14 +8,15 @@
     "format": "rescript format",
     "postinstall": "rescript build -with-deps",
     "start:re": "rescript build -w",
-    "start:snowpack": "snowpack dev"
+    "start:snowpack": "snowpack dev",
+    "clean": "rescript clean"
   },
   "dependencies": {
     "@rescript/react": "^0.10.3",
-    "bs-webapi": "^0.19.1",
     "react": "experimental",
     "react-dom": "experimental",
-    "rescript": "^9.1.2"
+    "rescript": "^9.1.2",
+    "rescript-webapi": "^0.6.0"
   },
   "devDependencies": {
     "@snowpack/plugin-react-refresh": "^2.5.0",

@@ -5,8 +5,8 @@ B /Users/mingderwang/src/re/my-rescript-project/node_modules/rescript/lib/ocaml
 FLG -w +a-4-9-20-40-41-42-50-61-102
 S /Users/mingderwang/src/re/my-rescript-project/node_modules/@rescript/react/lib/ocaml
 B /Users/mingderwang/src/re/my-rescript-project/node_modules/@rescript/react/lib/ocaml
-S /Users/mingderwang/src/re/my-rescript-project/node_modules/bs-webapi/lib/ocaml
-B /Users/mingderwang/src/re/my-rescript-project/node_modules/bs-webapi/lib/ocaml
+S /Users/mingderwang/src/re/my-rescript-project/node_modules/rescript-webapi/lib/ocaml
+B /Users/mingderwang/src/re/my-rescript-project/node_modules/rescript-webapi/lib/ocaml
 S src
 B lib/bs/src
 S src/bindings

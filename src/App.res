@@ -5,7 +5,13 @@
 @react.component
 let make = () => {
   let (count, setCount) = React.useState(() => 0)
+  let name = "Joe"
 
+  let greeting = `Hello
+World
+👋
+${name}
+`
   <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
@@ -15,14 +21,13 @@ let make = () => {
         {React.string(" and save to reload.")}
       </p>
       <button className="App-button" onClick={_ => setCount(count => count + 1)}>
-        {React.string("Count: " ++ string_of_int(count))}
+        {React.string(greeting ++ string_of_int(count))}
       </button>
       <a
         className="App-link"
         href="https://rescript-lang.org/docs/react/latest/introduction"
         target="_blank"
-        rel="noopener noreferrer"
-      >
+        rel="noopener noreferrer">
         {React.string("Learn ReScript React")}
       </a>
     </header>

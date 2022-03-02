@@ -14,6 +14,7 @@ function App(Props) {
         return 0;
       });
   var setCount = match[1];
+  var greeting = "Hello\nWorld\n👋\n" + "Joe" + "\n";
   return React.createElement("div", {
               className: "App"
             }, React.createElement("header", {
@@ -29,7 +30,7 @@ function App(Props) {
                                         return count + 1 | 0;
                                       }));
                         })
-                    }, "Count: " + String(match[0])), React.createElement("a", {
+                    }, greeting + String(match[0])), React.createElement("a", {
                       className: "App-link",
                       href: "https://rescript-lang.org/docs/react/latest/introduction",
                       rel: "noopener noreferrer",
