@@ -1,1 +1,1 @@
-{ "dirs" : [ "src" , "src/bindings" ] , "pkgs" : [ [ "bs-webapi" , "/private/tmp/my-rescript-project/node_modules/bs-webapi" ] , [ "@rescript/react" , "/private/tmp/my-rescript-project/node_modules/@rescript/react" ] ] , "generated" : [] }
+{ "dirs" : [ "src" , "src/bindings" ] , "pkgs" : [ [ "bs-webapi" , "/Users/mingderwang/src/re/my-rescript-project/node_modules/bs-webapi" ] , [ "@rescript/react" , "/Users/mingderwang/src/re/my-rescript-project/node_modules/@rescript/react" ] ] , "generated" : [] }
