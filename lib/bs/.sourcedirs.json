@@ -1,1 +1,0 @@
-{ "dirs" : [ "src" , "src/bindings" ] , "pkgs" : [ [ "bs-webapi" , "/Users/mingderwang/src/re/my-rescript-project/node_modules/bs-webapi" ] , [ "@rescript/react" , "/Users/mingderwang/src/re/my-rescript-project/node_modules/@rescript/react" ] ] , "generated" : [] }
