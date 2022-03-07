@@ -1,35 +1,14 @@
-%%raw(`import './App.css';`)
-
-@module("./logo.svg") external logo: string = "default"
+%%raw("import './main.css'")
 
 @react.component
-let make = () => {
-  let (count, setCount) = React.useState(() => 0)
-  let name = "Joe"
+let make = (~active: bool) => {
+  let activeClass = if active {
+    "text-green-600"
+  } else {
+    "text-red-600"
+  }
 
-  let greeting = `Hello
-World
-👋
-${name}
-`
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
-        {React.string("Edit ")}
-        <code> {React.string("src/App.js")} </code>
-        {React.string(" and save to reload.")}
-      </p>
-      <button className="App-button" onClick={_ => setCount(count => count + 1)}>
-        {React.string(greeting ++ string_of_int(count))}
-      </button>
-      <a
-        className="App-link"
-        href="https://rescript-lang.org/docs/react/latest/introduction"
-        target="_blank"
-        rel="noopener noreferrer">
-        {React.string("Learn ReScript React")}
-      </a>
-    </header>
+  <div className={`text-3xl font-bold underline ${activeClass}`}>
+    {React.string("Hello World")}
   </div>
 }

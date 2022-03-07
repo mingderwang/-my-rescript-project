@@ -9,7 +9,9 @@ var root = ReactDomExperimental.createRootWithId("root");
 
 if (root !== undefined) {
   Caml_option.valFromOption(root).render(React.createElement(React.StrictMode, {
-            children: React.createElement(App.make, {})
+            children: React.createElement(App.make, {
+                  active: false
+                })
           }));
 }
 
