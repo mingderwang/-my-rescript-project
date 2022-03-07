@@ -10,7 +10,9 @@ function App(Props) {
   var activeClass = active ? "text-green-600" : "text-red-600";
   return React.createElement("div", {
               className: "text-3xl font-bold underline " + activeClass
-            }, "Hello World");
+            }, "Hello World", React.createElement("button", {
+                  className: "btn btn-info"
+                }, "Info"));
 }
 
 var make = App;

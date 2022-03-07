@@ -9,6 +9,6 @@ let make = (~active: bool) => {
   }
 
   <div className={`text-3xl font-bold underline ${activeClass}`}>
-    {React.string("Hello World")}
+    {React.string("Hello World")} <button className="btn btn-info"> {React.string("Info")} </button>
   </div>
 }
