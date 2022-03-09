@@ -1,14 +1,11 @@
-%%raw("import './main.css'")
-
 @react.component
-let make = (~active: bool) => {
-  let activeClass = if active {
-    "text-green-600"
-  } else {
-    "text-red-600"
+let make = (~count: int) => {
+  let times = switch count {
+  | 1 => "once"
+  | 2 => "twice"
+  | n => Belt.Int.toString(n) ++ " times"
   }
+  let msg = "Click me " ++ times
 
-  <div className={`text-3xl font-bold underline ${activeClass}`}>
-    {React.string("Hello World")} <button className="btn btn-info"> {React.string("Info")} </button>
-  </div>
+  <button> {msg->React.string} </button>
 }
