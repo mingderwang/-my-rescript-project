@@ -7,10 +7,8 @@ let make = () => {
     setCount(prev => prev + 1)
   }
 
-  let msg = "You clicked " ++ Belt.Int.toString(count) ++ " times"
-
   <div>
-    <p> {React.string(msg)} </p>
+    <Display count={count} />
     <button className="btn btn-primary" onClick> {React.string("Click me")} </button>
   </div>
 }

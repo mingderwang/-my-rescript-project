@@ -2,6 +2,7 @@
 
 import * as Curry from "rescript/lib/es6/curry.js";
 import * as React from "react";
+import * as Display from "./Display.bs.js";
 
 function Counter(Props) {
   var match = React.useState(function () {
@@ -13,8 +14,9 @@ function Counter(Props) {
                   return prev + 1 | 0;
                 }));
   };
-  var msg = "You clicked " + String(match[0]) + " times";
-  return React.createElement("div", undefined, React.createElement("p", undefined, msg), React.createElement("button", {
+  return React.createElement("div", undefined, React.createElement(Display.make, {
+                  count: match[0]
+                }), React.createElement("button", {
                   className: "btn btn-primary",
                   onClick: onClick
                 }, "Click me"));

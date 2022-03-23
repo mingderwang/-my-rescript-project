@@ -1,5 +1,8 @@
 .snowpack
 .vercel
+.merlin
+vercel.json
 build
 node_modules
 lib
+src/**/*.bs.js
