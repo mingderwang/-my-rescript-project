@@ -1,5 +1,4 @@
 {
-  "version: "0.0.1",
   "scripts": {
     "start": "run-p start:**",
     "build": "run-s build:**",
